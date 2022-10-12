@@ -7,13 +7,56 @@ a {
   color: #00B7FF;
 }
 
-.login {
+.button {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 45px;
+  padding: 15px 32px;
+  text-align: center;
+  margin: 4px 2px;
 }
 
-.login img {
+.button img {
   height: 50px;
+}
+
+h1 {
+  display: grid;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: aquamarine;
+  
+}
+
+#login {
+  display: flex;
+  justify-content: center;
+}
+
+#boxes-page {
+  display: flex;
+  justify-content: center;
+}
+
+#logout {
+  display: grid;
+  justify-content: right;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#new-post input[type="text"] {
+  display: grid;
+  margin-top: 50px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  line-height: 28px;
+}
+
+#new-post input[type="submit"] {
+  display: flex;
+  margin: 10px auto;
+  justify-content: center;
+  
 }

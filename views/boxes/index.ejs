@@ -1,13 +1,21 @@
 <%- include('../partials/header') %>
 
 <h1>Home Page</h1>
+
+<div id="boxes-page">
 <h2>Post what you want!</h2>
+</div>
+
+<div id="logout">
 <a href="/logout">LOG OUT</a>
+</div>
 
 <div>
     <form id="new-post" action="/boxes" method="POST">
         <input type="text">
+        <input type="submit" value="Create Post">
     </form>
+  
 </div>
 
 

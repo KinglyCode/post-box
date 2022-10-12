@@ -3,7 +3,7 @@ var router = express.Router();
 
 const passport = require('passport')
 
-/* GET home page. */
+//Login page to get to the homepage
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Post-Box' });
 });
@@ -24,8 +24,10 @@ router.get('/oauth2callback', passport.authenticate(
 ))
 
 router.get('/logout', function(req, res){
-  req.logout()
-  res.redirect('/index')
+  req.logout(function(err){
+    if(err) return next(err)
+    res.redirect('/')
+  })
 })
 
 module.exports = router;

@@ -13,7 +13,7 @@ require('./config/passport')
 const methodOverride = require('method-override')
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/boxes');
+var boxesRouter = require('./routes/boxes');
 
 var app = express();
 
@@ -40,7 +40,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(methodOverride('_method'))
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/boxes', boxesRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
