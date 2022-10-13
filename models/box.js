@@ -8,9 +8,6 @@ module.exports = {
 
 const boxSchema = new Schema({
     content: String,
-    //user: {type: Schema.Types.ObjectId, ref: 'User', required: true},
-    userName: String,
-    userAvatar: String,
     
 })
 

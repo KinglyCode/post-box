@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+
+  <body>
+    <main>
+
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
     <h1><%= title %>, let your mind free!</h1>
-    <div id="login">
+    <div class="jumbotron text-center" id="login">
     <h2>Please Login or create an account with Google!</h2>
     </div>
     <div id="google">
-    <a href="/auth/google" class="button">Google Account&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
+    <a href="/auth/google" class="btn btn-info" role="button">Google Account&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
     </div>
  
+  </main>
+</body>
+</html>
+
+
+
+
+
+
