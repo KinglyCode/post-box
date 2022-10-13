@@ -3,6 +3,7 @@ var router = express.Router();
 
 const passport = require('passport')
 
+
 //Login page to get to the homepage
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Post-Box' });
